@@ -1,6 +1,6 @@
 :root {
     --cor-primaria: #5EB647;
-    --cor-secundaria: #ffffff;
+    --cor-secundaria: #fff;
 }
 
 * {
@@ -20,7 +20,18 @@ header {
     justify-content: space-around;
     align-items: center;
 
-    margin: 20px 0px 45px;
+    margin: 15px 0px 35px;
+    
+}
+
+.header-push {  
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    background-color: var(--cor-secundaria);
 }
 
 nav ul {
@@ -28,6 +39,7 @@ nav ul {
     gap: 73px;
 
     list-style: none;
+    
 }
 
 .navbar-link {
@@ -38,13 +50,17 @@ nav ul {
     color: var(--cor-primaria);
 }
 
+:hover:: {
+    background-color: aqua;
+}
+
 .ad-container {
     display: flex;
     justify-content: center;
     align-items: center;
 
     border-top: 2px solid #269200;
-    ;
+
     padding: 16px;
     background-color: var(--cor-primaria);
 }
@@ -63,20 +79,112 @@ nav ul {
 }
 
 main {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    gap: 120px;
 }
 
-.headline {
+.container-headline {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 300px;
+
 }
 
 .headline img {
-    max-width: 350px;
+    max-width: 400px;
 }
 
-.container-title {
+.headline-text {
+    text-align: center;
+    max-width: 400px;
     font-size: 50px;
+    font-weight: 700;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+.headline-text span {
+    color: var(--cor-primaria);
+}
+
+.headline-text button {
+    background-color: var(--cor-primaria);
+    border: none;
+    padding: 20px;
+    margin: 0px 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: var(--cor-secundaria);
+  }
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
     
+}
+
+.about img {
+    max-width: 500px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 600px;
+    
+}
+
+.title-text {
+    font-size: 55px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.photo-gallery {
+    display: flex;
+}
+
+.gallery-align {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.gallery-align img {
+    max-width: 300px;
+}
+
+.gallery-align p {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    
+    width: auto;
+    padding: 10px;
+    
+    background-color: var(--cor-primaria);
+}
+
+footer p {
+    font-size: 23px;
+    color: var(--cor-secundaria);
 }
