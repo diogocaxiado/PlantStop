@@ -19,19 +19,14 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
-    margin: 15px 0px 35px;
     
-}
-
-.header-push {  
-    display: flex;
+    border-bottom: 2px solid #269200;
     position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    
+    padding: 15px;
+
     background-color: var(--cor-secundaria);
+    
 }
 
 nav ul {
@@ -39,7 +34,6 @@ nav ul {
     gap: 73px;
 
     list-style: none;
-    
 }
 
 .navbar-link {
@@ -50,8 +44,10 @@ nav ul {
     color: var(--cor-primaria);
 }
 
-:hover:: {
-    background-color: aqua;
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
 }
 
 .ad-container {
@@ -69,6 +65,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     gap: 35px;
+
     font-size: 25px;
     font-weight: 700;
     color: var(--cor-secundaria);
@@ -78,19 +75,11 @@ nav ul {
     color: #D6FFCB;;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    padding: 70px;
-    gap: 120px;
-}
-
 .container-headline {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 300px;
-
 }
 
 .headline img {
@@ -98,28 +87,30 @@ main {
 }
 
 .headline-text {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
     text-align: center;
     max-width: 400px;
     font-size: 50px;
     font-weight: 700;
-  
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-  }
+}
   
 .headline-text span {
     color: var(--cor-primaria);
 }
 
 .headline-text button {
-    background-color: var(--cor-primaria);
     border: none;
     padding: 20px;
     margin: 0px 20px;
-    font-size: 30px;
     border-radius: 10px;
+
+    font-size: 30px;
+
     color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
   }
 
 .about {
@@ -127,7 +118,8 @@ main {
     justify-content: center;
     align-items: center;
     gap: 150px;
-    
+
+    padding-top: 230px;
 }
 
 .about img {
@@ -138,11 +130,11 @@ main {
     display: flex;
     flex-direction: column;
   
+    max-width: 600px;
     gap: 50px;
+
     font-size: 24px;
     font-weight: 500;
-    max-width: 600px;
-    
 }
 
 .title-text {
@@ -154,6 +146,8 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 80px;
+
+    padding-top: 230px;
 }
 
 .photo-gallery {
